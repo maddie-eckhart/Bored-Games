@@ -1,21 +1,20 @@
 //
-//  ABCViewController.swift
+//  TruthsAndLiesViewController.swift
 //  Bored Games
 //
-//  Created by Madeline Eckhart on 5/9/18.
+//  Created by Madeline Eckhart on 5/10/18.
 //  Copyright © 2018 MaddGaming. All rights reserved.
 //
 
 import UIKit
 
-class ABCViewController: UIViewController {
+class TruthsAndLiesViewController: UIViewController {
 
-    let list = ["Breakfast Food","Food","Snack Foods", "Drinks", "Alcoholic Beverages","Flowers", "Countries", "Movie titles","Song Titles", "Celebrities (First and Last names)", "Shapes and Colors", "Animals", "Emotions", "Musical Instruments", "Companies", "Occupations", "Things You Can Wear", "School Supplies", "Desserts", "Stores", "Modes of Transportation", "Curses", "Slang Phrases"]
-    
+    let categories = ["Accomplishments", "Forgeign languages", "Childhood and Family", "Sports", "Do you have any cool memoribilia?", "School", "Pet Peeves", "Allergies", "What do you do in your free time?", "Travel", "Met any Celebrities?"]
     
     @IBAction func btnGetCategory(_ sender: Any) {
-        let num = Int(arc4random_uniform(22))
-        txtCategory.text = list[num]
+        let num = Int(arc4random_uniform(25))
+        txtCategory.text = categories[num]
     }
     
     @IBOutlet weak var txtCategory: UILabel!

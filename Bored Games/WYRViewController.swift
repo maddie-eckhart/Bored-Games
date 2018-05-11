@@ -1,24 +1,22 @@
 //
-//  ABCViewController.swift
+//  WYRViewController.swift
 //  Bored Games
 //
-//  Created by Madeline Eckhart on 5/9/18.
+//  Created by Madeline Eckhart on 5/10/18.
 //  Copyright © 2018 MaddGaming. All rights reserved.
 //
 
 import UIKit
 
-class ABCViewController: UIViewController {
+class WYRViewController: UIViewController {
 
-    let list = ["Breakfast Food","Food","Snack Foods", "Drinks", "Alcoholic Beverages","Flowers", "Countries", "Movie titles","Song Titles", "Celebrities (First and Last names)", "Shapes and Colors", "Animals", "Emotions", "Musical Instruments", "Companies", "Occupations", "Things You Can Wear", "School Supplies", "Desserts", "Stores", "Modes of Transportation", "Curses", "Slang Phrases"]
+    let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want",
+                        "Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry",
+                        ""]
     
+    let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton",""]
     
-    @IBAction func btnGetCategory(_ sender: Any) {
-        let num = Int(arc4random_uniform(22))
-        txtCategory.text = list[num]
-    }
-    
-    @IBOutlet weak var txtCategory: UILabel!
+    let wouldYouAdults = [""]
     
     override func viewDidLoad() {
         super.viewDidLoad()
