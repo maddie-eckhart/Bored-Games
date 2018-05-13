@@ -18,6 +18,18 @@ class WYRViewController: UIViewController {
     
     let wouldYouAdults = [""]
     
+    @IBAction func btnQuestionGenerator(_ sender: Any) {
+        
+        txtQuestion.text = getQuestion(ageGroup: wouldYouKids)
+    }
+    @IBOutlet weak var txtQuestion: UILabel!
+    
+    func getQuestion (ageGroup: [String]) -> String {
+        let length = UInt32(ageGroup.count)
+        let num = Int(arc4random_uniform(length))
+        let question = ageGroup[num]
+        return question
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
