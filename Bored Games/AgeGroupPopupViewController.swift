@@ -1,28 +1,27 @@
 //
-//  ABCViewController.swift
+//  AgeGroupPopupViewController.swift
 //  Bored Games
 //
-//  Created by Madeline Eckhart on 5/9/18.
+//  Created by Madeline Eckhart on 5/13/18.
 //  Copyright © 2018 MaddGaming. All rights reserved.
 //
 
 import UIKit
 
-class ABCViewController: UIViewController {
+class AgeGroupPopupViewController: UIViewController {
 
-    let list = ["Alcoholic Beverages","Animals","Breakfast Food","Celebrities (First and Last names)!","Companies", "Countries","Curses","Desserts","Drinks","Emotions","Flowers","Food","Modes of Transportation","Movie titles!","Musical Instruments","Occupations!","School Supplies","Shapes and Colors","Slang Phrases","Snack Foods","Song Titles", "Stores","Things You Can Wear"]
-    
-    
-    @IBAction func btnGetCategory(_ sender: Any) {
-        let num = Int(arc4random_uniform(22))
-        txtCategory.text = list[num]
+    @IBAction func btnKids(_ sender: Any) {
+        self.view.removeFromSuperview()
+        
     }
-    
-    @IBOutlet weak var txtCategory: UILabel!
+    @IBAction func btnTeens(_ sender: Any) {
+    }
+    @IBAction func btnAdults(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         // Do any additional setup after loading the view.
     }
 

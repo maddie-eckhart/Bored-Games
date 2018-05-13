@@ -13,6 +13,7 @@
 		C14C201320A2809B008CE960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C201120A2809B008CE960 /* Main.storyboard */; };
 		C14C201520A2809C008CE960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C201420A2809C008CE960 /* Assets.xcassets */; };
 		C14C201820A2809C008CE960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C201620A2809C008CE960 /* LaunchScreen.storyboard */; };
+		C15E574420A8A8BF00D75DF2 /* AgeGroupPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E574320A8A8BF00D75DF2 /* AgeGroupPopupViewController.swift */; };
 		C197E66020A50BB1009C9EB4 /* WYRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E65F20A50BB1009C9EB4 /* WYRViewController.swift */; };
 		C197E66220A5156F009C9EB4 /* TruthsAndLiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E66120A5156F009C9EB4 /* TruthsAndLiesViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		C14C201420A2809C008CE960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C14C201720A2809C008CE960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14C201920A2809C008CE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15E574320A8A8BF00D75DF2 /* AgeGroupPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGroupPopupViewController.swift; sourceTree = "<group>"; };
 		C197E65F20A50BB1009C9EB4 /* WYRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYRViewController.swift; sourceTree = "<group>"; };
 		C197E66120A5156F009C9EB4 /* TruthsAndLiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthsAndLiesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 				C197E66120A5156F009C9EB4 /* TruthsAndLiesViewController.swift */,
 				C11F4A7220A3747E00103607 /* ABCViewController.swift */,
 				C11F4A7020A3675C00103607 /* GhostViewController.swift */,
+				C15E574320A8A8BF00D75DF2 /* AgeGroupPopupViewController.swift */,
 				C14C201120A2809B008CE960 /* Main.storyboard */,
 				C14C201420A2809C008CE960 /* Assets.xcassets */,
 				C14C201620A2809C008CE960 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				C197E66220A5156F009C9EB4 /* TruthsAndLiesViewController.swift in Sources */,
 				C14C200E20A2809B008CE960 /* AppDelegate.swift in Sources */,
 				C197E66020A50BB1009C9EB4 /* WYRViewController.swift in Sources */,
+				C15E574420A8A8BF00D75DF2 /* AgeGroupPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

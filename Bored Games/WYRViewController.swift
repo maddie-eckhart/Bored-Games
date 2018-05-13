@@ -30,7 +30,18 @@ class WYRViewController: UIViewController {
         let question = ageGroup[num]
         return question
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let showPopup = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ageGroup") as! AgeGroupPopupViewController
+        self.addChildViewController(showPopup)
+        showPopup.view.frame = self.view.frame
+        self.view.addSubview(showPopup.view)
+        showPopup.didMove(toParentViewController: self)
+    }
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
