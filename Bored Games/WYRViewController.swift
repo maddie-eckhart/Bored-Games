@@ -8,21 +8,32 @@
 
 import UIKit
 
-class WYRViewController: UIViewController {
+class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
 
-    let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want",
-                        "Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry",
-                        ""]
-    
+    let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want","Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry", ""]
     let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton",""]
-    
     let wouldYouAdults = [""]
+    
+    var wouldYouList = [""]
     
     @IBAction func btnQuestionGenerator(_ sender: Any) {
         
-        txtQuestion.text = getQuestion(ageGroup: wouldYouKids)
+        txtQuestion.text = getQuestion(ageGroup: wouldYouList)
     }
     @IBOutlet weak var txtQuestion: UILabel!
+    
+    func getGroup (group: Int) {
+        switch group {
+        case 1:   // kids
+            wouldYouList = wouldYouKids
+        case 2:   // teens
+            wouldYouList = wouldYouTeens
+        case 3:   // adults
+            wouldYouList = wouldYouAdults
+        default:
+            wouldYouList = [""]
+        }
+    }
     
     func getQuestion (ageGroup: [String]) -> String {
         let length = UInt32(ageGroup.count)

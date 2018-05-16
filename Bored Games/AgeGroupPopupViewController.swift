@@ -8,15 +8,27 @@
 
 import UIKit
 
+protocol AgeGroupViewControllerDelegate{
+    func getGroup (group: Int)
+}
+
 class AgeGroupPopupViewController: UIViewController {
 
+    var delegate: AgeGroupViewControllerDelegate?
+    var groupToSave: Int?
+    
     @IBAction func btnKids(_ sender: Any) {
-        self.view.removeFromSuperview()
         
+        groupToSave = 1
+        delegate?.getGroup(group: groupToSave!)
+        //self.dismiss(animated: true, completion: nil)
+        self.view.removeFromSuperview()
     }
     @IBAction func btnTeens(_ sender: Any) {
+        groupToSave = 2
     }
     @IBAction func btnAdults(_ sender: Any) {
+        groupToSave = 3
     }
     
     override func viewDidLoad() {
