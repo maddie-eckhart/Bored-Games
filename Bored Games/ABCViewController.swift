@@ -10,7 +10,7 @@ import UIKit
 
 class ABCViewController: UIViewController {
 
-    let list = ["Alcoholic Beverages","Animals","Breakfast Food","Celebrities (First and Last names)!","Companies", "Countries","Curses","Desserts","Drinks","Emotions","Flowers","Food","Modes of Transportation","Movie titles!","Musical Instruments","Occupations!","School Supplies","Shapes and Colors","Slang Phrases","Snack Foods","Song Titles", "Stores","Things You Can Wear"]
+    let list = ["Alcoholic Beverages","Animals","Breakfast Food","Celebrities (First and Last names)!","Companies", "Countries","Curses","Desserts","Drinks","Emotions","Flowers","Food","Modes of Transportation","Movie titles!","Musical Instruments","Occupations!","Restaurants","School Supplies","Shapes and Colors","Slang Phrases","Snack Foods","Song Titles", "Stores","Things You Can Wear"]
     
     
     @IBAction func btnGetCategory(_ sender: Any) {
