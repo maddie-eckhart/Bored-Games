@@ -9,10 +9,15 @@ An iOS app with games for waiting in lines, breaking the ice, or filling the tim
 - Ghost
 - Extreme Tic-Tac-Toe
 
-## Usage
-Bored Games houses six games and provides either the full game (Extreme Tic-Tac-Toe, Would you Rather, Never Have I Ever) or a prompt to be used while playing (2 Truths and a Lie, Ghost, The Alphabet Game). Question-based games such as Would you Rather and Never Have I Ever have the option to select an age group to provide appropriate questions.
+## Game Features
+*Bored Games* houses six games and provides either the full game (Extreme Tic-Tac-Toe, Would you Rather, Never Have I Ever) or a prompt to be used while playing (2 Truths and a Lie, Ghost, The Alphabet Game). Question-based games such as Would you Rather and Never Have I Ever have the option to select an age group to provide appropriate questions. User-driven games such as The Alphabet Game, Ghost, and 2 Truths and a Lie have random letter and category generators to help the game get started.
+
+### Possible Additions
+- Truth or Dare
+- Hangman
+- Storykiller
+- Trivia
 
 ### Possible Collaborations
 - Scrabble
 - Heads Up
-
