@@ -15,7 +15,6 @@ An iOS app with games for waiting in lines, breaking the ice, or filling the tim
 ### Possible Additions
 - Truth or Dare
 - Hangman
-- Storykiller
 - Trivia
 
 ### Possible Collaborations
