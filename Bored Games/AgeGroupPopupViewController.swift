@@ -18,7 +18,6 @@ class AgeGroupPopupViewController: UIViewController {
     var groupToSave: Int?
     
     @IBAction func btnKids(_ sender: Any) {
-        
         groupToSave = 1
         delegate?.getGroup(group: groupToSave!)
         //self.dismiss(animated: true, completion: nil)
