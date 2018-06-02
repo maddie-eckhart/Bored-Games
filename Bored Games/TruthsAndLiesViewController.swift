@@ -10,7 +10,7 @@ import UIKit
 
 class TruthsAndLiesViewController: UIViewController {
 
-    let categories = ["Accomplishments", "Forgeign languages", "Childhood and Family", "Sports", "Do you have any cool memoribilia?", "School", "Pet Peeves", "Allergies", "What do you do in your free time?", "Travel", "Met any Celebrities?"]
+    let categories = ["Accomplishments", "Forgeign languages", "Childhood and Family", "Sports", "Do you have any cool memoribilia?", "School", "Pet Peeves", "Allergies", "What do you do in your free time?", "Travel", "Met any Celebrities?", "Surgeries", "Pets"]
     
     @IBAction func btnGetCategory(_ sender: Any) {
         let num = Int(arc4random_uniform(25))
