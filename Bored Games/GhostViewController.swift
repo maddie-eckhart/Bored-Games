@@ -20,14 +20,14 @@ class GhostViewController: UIViewController {
     @IBOutlet weak var txtLetter: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        /*super.viewDidAppear(animated)
         let width = UIScreen.main.bounds.size.width
         let height = 243
         
-        let rectangle = CGRect(x: 0, y: 0, width: Int(width), height: height)
-        
+        let rectangle: CGRect = CGRect(x: 0, y: 0, width: Int(width), height: height)
+
         view.draw(rectangle)
-        
+        */
         
     }
     override func viewDidLoad() {

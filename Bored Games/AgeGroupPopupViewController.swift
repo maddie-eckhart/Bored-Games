@@ -17,6 +17,7 @@ class AgeGroupPopupViewController: UIViewController {
     var delegate: AgeGroupViewControllerDelegate?
     var groupToSave: Int?
     
+    // transferring chosen age group to wyr controller
     @IBAction func btnKids(_ sender: Any) {
         groupToSave = 1
         delegate?.getGroup(group: groupToSave!)

@@ -11,14 +11,15 @@ import UIKit
 class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
 
     let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want","Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry", ""]
-    let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton",""]
+    let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton","Vacation on a beach or in the city?"]
     let wouldYouAdults = [""]
     
-    var wouldYouList = [""]
+    var wouldYouList: [String]?
+    
     
     @IBAction func btnQuestionGenerator(_ sender: Any) {
-        
-        txtQuestion.text = getQuestion(ageGroup: wouldYouList)
+        print("here")
+        txtQuestion.text = getQuestion(ageGroup: wouldYouList!)
     }
     @IBOutlet weak var txtQuestion: UILabel!
     
@@ -31,7 +32,7 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
         case 3:   // adults
             wouldYouList = wouldYouAdults
         default:
-            wouldYouList = [""]
+            wouldYouList = ["test"]
         }
     }
     
