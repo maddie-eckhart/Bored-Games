@@ -12,6 +12,7 @@ class GhostViewController: UIViewController {
 
     var alpha = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
                  "O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    let givenColor: UIColor = UIColor.red
     
     @IBAction func btnGenerator(_ sender: Any) {
         let num = Int(arc4random_uniform(25))
@@ -20,7 +21,9 @@ class GhostViewController: UIViewController {
     @IBOutlet weak var txtLetter: UILabel!
     
     override func viewDidAppear(_ animated: Bool) {
-        /*super.viewDidAppear(animated)
+         /*let view = BackgroundsUIView()
+        view.setColor(color: UIColor.blue)
+       super.viewDidAppear(animated)
         let width = UIScreen.main.bounds.size.width
         let height = 243
         

@@ -20,8 +20,8 @@ class BackgroundsUIView: UIView {
     
     override func draw(_ rect: CGRect) {
         let path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 240))
-        UIColor.red.setFill()
-        //givenColor?.setFill()
+        //UIColor.red.setFill()
+        givenColor?.setFill()
         path.fill()
     }
     
