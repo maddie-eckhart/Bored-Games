@@ -215,7 +215,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ids-0r-V7k">
                                 <rect key="frame" x="16" y="297" width="343" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Instructions: Each player says three statements, two of them true statements and one of them a false one. The other players then try to guess which one is the false statement. </string>
+                                <string key="text">Instructions: Each player says three statements about themelves: two of them true statements and one of them a false one. The other players then try to guess which one is the false statement. </string>
                                 <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -482,7 +482,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5nr-7n-2i1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3040.8000000000002" y="1037.6311844077961"/>
+            <point key="canvasLocation" x="3039" y="1029"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ytM-Qb-VD2">
