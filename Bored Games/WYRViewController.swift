@@ -45,11 +45,14 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let showPopup = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ageGroup") as! AgeGroupPopupViewController
-        self.addChildViewController(showPopup)
-        showPopup.view.frame = self.view.frame
-        self.view.addSubview(showPopup.view)
-        showPopup.didMove(toParentViewController: self)
+        
+        let alert = UIAlertController(title: "Lets Play!", message: "Please select an age group", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Kids", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Teens", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Adults", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+
     }
     
     override func viewDidLoad() {
