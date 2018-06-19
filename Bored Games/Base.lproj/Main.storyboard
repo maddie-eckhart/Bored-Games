@@ -572,62 +572,6 @@
             </objects>
             <point key="canvasLocation" x="-391.19999999999999" y="1029.5352323838081"/>
         </scene>
-        <!--Age Group-->
-        <scene sceneID="Gmz-Qw-G8n">
-            <objects>
-                <viewController storyboardIdentifier="ageGroup" id="QvP-f2-jFV" userLabel="Age Group" customClass="AgeGroupPopupViewController" customModule="Bored_Games" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="i1U-UZ-15R">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="310"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select an Age Group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dl-IQ-Siu">
-                                <rect key="frame" x="72" y="29" width="157" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp4-BH-h4b">
-                                <rect key="frame" x="30" y="73" width="240" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86773003472222221" green="0.98543294270833337" blue="0.12291124131944445" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Kids"/>
-                                <connections>
-                                    <action selector="btnKids:" destination="QvP-f2-jFV" eventType="touchUpInside" id="Oqp-7v-nNS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjc-Es-2Db">
-                                <rect key="frame" x="30" y="144" width="240" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86773003472222221" green="0.98543294270833337" blue="0.12291124131944445" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Teens"/>
-                                <connections>
-                                    <action selector="btnTeens:" destination="QvP-f2-jFV" eventType="touchUpInside" id="9qy-zu-JoK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i69-nz-gSP">
-                                <rect key="frame" x="30" y="214" width="240" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.86773003472222221" green="0.98543294270833337" blue="0.12291124131944445" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Adults"/>
-                                <connections>
-                                    <action selector="btnAdults:" destination="QvP-f2-jFV" eventType="touchUpInside" id="tOw-Uc-E4e"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="QjX-xI-NyE"/>
-                    </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="300" height="310"/>
-                    <size key="freeformSize" width="300" height="310"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ou-17-wxA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-808" y="1558"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="y5Q-sc-LIl">
             <objects>
