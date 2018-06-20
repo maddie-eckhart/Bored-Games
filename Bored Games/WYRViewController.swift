@@ -15,7 +15,7 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
     let wouldYouAdults = [""]
     
     var wouldYouList: [String]?
-    
+    var group: Int?
     
     @IBAction func btnQuestionGenerator(_ sender: Any) {
         print("here")
@@ -48,9 +48,9 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
         
         let alert = UIAlertController(title: "Lets Play!", message: "Please select an age group", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Kids", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Teens", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "Adults", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Kids", style: .default, handler: {_ in print("1")}))
+        alert.addAction(UIAlertAction(title: "Teens", style: .default, handler: {_ in print("2")}))
+        alert.addAction(UIAlertAction(title: "Adults", style: .default, handler: {_ in print("3")}))
         self.present(alert, animated: true, completion: nil)
 
     }
