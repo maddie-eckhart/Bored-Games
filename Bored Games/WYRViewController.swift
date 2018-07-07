@@ -8,11 +8,15 @@
 
 import UIKit
 
-class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
+class WYRViewController: UIViewController {
 
-    let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want","Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry", ""]
-    let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton","Vacation on a beach or in the city?"]
-    let wouldYouAdults = [""]
+//    let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want","Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry", ""]
+//    let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton","Vacation on a beach or in the city?"]
+//    let wouldYouAdults = [""]
+    
+    let wouldYouKids = ["kids","kids","kids"]
+    let wouldYouTeens = ["teen","teen","teen"]
+    let wouldYouAdults = ["adult","adult","adult"]
     
     var wouldYouList: [String]?
     var group: Int?
@@ -22,19 +26,6 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
         txtQuestion.text = getQuestion(ageGroup: wouldYouList!)
     }
     @IBOutlet weak var txtQuestion: UILabel!
-    
-    func getGroup (group: Int) {
-        switch group {
-        case 1:   // kids
-            wouldYouList = wouldYouKids
-        case 2:   // teens
-            wouldYouList = wouldYouTeens
-        case 3:   // adults
-            wouldYouList = wouldYouAdults
-        default:
-            wouldYouList = ["test"]
-        }
-    }
     
     func getQuestion (ageGroup: [String]) -> String {
         let length = UInt32(ageGroup.count)
@@ -48,9 +39,9 @@ class WYRViewController: UIViewController, AgeGroupViewControllerDelegate {
         
         let alert = UIAlertController(title: "Lets Play!", message: "Please select an age group", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Kids", style: .default, handler: {_ in print("1")}))
-        alert.addAction(UIAlertAction(title: "Teens", style: .default, handler: {_ in print("2")}))
-        alert.addAction(UIAlertAction(title: "Adults", style: .default, handler: {_ in print("3")}))
+        alert.addAction(UIAlertAction(title: "Kids", style: .default, handler: {_ in self.wouldYouList = self.wouldYouKids}))
+        alert.addAction(UIAlertAction(title: "Teens", style: .default, handler: {_ in self.wouldYouList = self.wouldYouTeens}))
+        alert.addAction(UIAlertAction(title: "Adults", style: .default, handler: {_ in self.wouldYouList = self.wouldYouAdults}))
         self.present(alert, animated: true, completion: nil)
 
     }
