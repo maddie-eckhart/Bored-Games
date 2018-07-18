@@ -10,46 +10,88 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    //----------------------------------------------- View Before Loading -----------------------------------------------//
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
         
-        
+        // adding container view
         let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
-        containerView.backgroundColor = UIColor.orange
+        containerView.backgroundColor = UIColor.white
         
-        // nav bar comes down to y: 20
-        let yValue: CGFloat = 130.0
-        let imageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: yValue, width: 50.0, height: 60.0))
+        // adding images
+        let imageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 50.0, height: 60.0))
         imageView.image = UIImage(named: "cloud1")
+        
+        let imageView2 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 100.0, height: 90.0))
+        imageView2.image = UIImage(named: "cloud2")
+        
+        let imageView3 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 50.0))
+        imageView3.image = UIImage(named: "cloud3")
+        
+        let imageView4 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 80.0))
+        imageView4.image = UIImage(named: "cloud4")
+       
+        // adding images to view
         containerView.addSubview(imageView)
+        containerView.addSubview(imageView2)
+        containerView.addSubview(imageView3)
+        containerView.addSubview(imageView4)
+
         tableView.backgroundView = containerView
         
-       // let new:CGPoint = containerView.point(inside: CGPoint(x: 0.0, y: yValue), with: nil)
-        UIView.animate(withDuration: 3, animations: {() -> Void in
-            imageView.center = CGPoint(x: -5.0, y: yValue)
-        })
+        // animate images
+        animateBackground(cloud: imageView, duration: getSpeed())
+        animateBackground(cloud: imageView2, duration: getSpeed())
+        animateBackground(cloud: imageView3, duration: getSpeed())
+        animateBackground(cloud: imageView4, duration: getSpeed())
+
 
     }
+    //----------------------------------------------- Table View -----------------------------------------------//
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
+    
+    //----------------------------------------------- Auxillary Functions -----------------------------------------------//
+    
+    func getPosition() -> CGFloat {
+        
+        let num: CGFloat = CGFloat(arc4random_uniform(UInt32(UIScreen.main.bounds.height)))
+        return num
+    }
+    
+    func getSpeed() -> CGFloat {
+        
+        let num: CGFloat = CGFloat(arc4random_uniform(UInt32(20)))
+        return num
+    }
+    
+    func animateBackground(cloud: UIImageView, duration: CGFloat) {
+        
+        UIView.animate(withDuration: TimeInterval(duration), delay: 0.0, options: .curveLinear, animations: {
+            cloud.frame.origin.x = -cloud.frame.size.width
+        }, completion: {_ in
+            cloud.frame.origin.x = self.view.frame.size.width
+            self.animateBackground(cloud: cloud, duration: self.getSpeed())
+        })
+        
+    }
+    
+    //----------------------------------------------- View After Loading -----------------------------------------------//
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.backgroundColor = UIColor.clear
-    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -94,14 +136,6 @@ class MainTableViewController: UITableViewController {
         return true
     }
     */
-
- 
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-    }
 
 
 }
