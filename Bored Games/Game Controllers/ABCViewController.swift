@@ -22,7 +22,6 @@ class ABCViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let view = BackgroundsUIView.self
         
         // Do any additional setup after loading the view.
     }

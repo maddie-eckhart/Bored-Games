@@ -34,15 +34,35 @@ class MainTableViewController: UITableViewController {
         let imageView3 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 50.0))
         imageView3.image = UIImage(named: "cloud3")
         
-        let imageView4 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 80.0))
+        let imageView4 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 50.0, height: 40.0))
         imageView4.image = UIImage(named: "cloud4")
+        
+        let imageView5 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 80.0, height: 80.0))
+        imageView5.image = UIImage(named: "cloud5")
+        
+        let imageView6 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 130.0, height: 80.0))
+        imageView6.image = UIImage(named: "cloud6")
+        
+        let imageView7 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 80.0))
+        imageView7.image = UIImage(named: "cloud7")
+        
+        let imageView8 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 70.0, height: 80.0))
+        imageView8.image = UIImage(named: "cloud8")
+        
+        let imageView9 = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: getPosition(), width: 40.0, height: 30.0))
+        imageView9.image = UIImage(named: "cloud9")
        
         // adding images to view
         containerView.addSubview(imageView)
         containerView.addSubview(imageView2)
         containerView.addSubview(imageView3)
         containerView.addSubview(imageView4)
-
+        containerView.addSubview(imageView5)
+        containerView.addSubview(imageView6)
+        containerView.addSubview(imageView7)
+        containerView.addSubview(imageView8)
+        containerView.addSubview(imageView9)
+        
         tableView.backgroundView = containerView
         
         // animate images
@@ -50,7 +70,11 @@ class MainTableViewController: UITableViewController {
         animateBackground(cloud: imageView2, duration: getSpeed())
         animateBackground(cloud: imageView3, duration: getSpeed())
         animateBackground(cloud: imageView4, duration: getSpeed())
-
+        animateBackground(cloud: imageView5, duration: getSpeed())
+        animateBackground(cloud: imageView6, duration: getSpeed())
+        animateBackground(cloud: imageView7, duration: getSpeed())
+        animateBackground(cloud: imageView8, duration: getSpeed())
+        animateBackground(cloud: imageView9, duration: getSpeed())
 
     }
     //----------------------------------------------- Table View -----------------------------------------------//
@@ -69,7 +93,7 @@ class MainTableViewController: UITableViewController {
     
     func getSpeed() -> CGFloat {
         
-        let num: CGFloat = CGFloat(arc4random_uniform(UInt32(20)))
+        let num: CGFloat = CGFloat(arc4random_uniform(UInt32(40)))
         return num
     }
     
@@ -77,6 +101,7 @@ class MainTableViewController: UITableViewController {
         
         UIView.animate(withDuration: TimeInterval(duration), delay: 0.0, options: .curveLinear, animations: {
             cloud.frame.origin.x = -cloud.frame.size.width
+            cloud.frame.origin.y = self.getPosition()
         }, completion: {_ in
             cloud.frame.origin.x = self.view.frame.size.width
             self.animateBackground(cloud: cloud, duration: self.getSpeed())

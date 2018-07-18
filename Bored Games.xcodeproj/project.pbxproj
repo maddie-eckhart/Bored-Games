@@ -13,7 +13,6 @@
 		C14C201320A2809B008CE960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C201120A2809B008CE960 /* Main.storyboard */; };
 		C14C201520A2809C008CE960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C14C201420A2809C008CE960 /* Assets.xcassets */; };
 		C14C201820A2809C008CE960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C14C201620A2809C008CE960 /* LaunchScreen.storyboard */; };
-		C17E1E7220B0E22700182F3F /* BackgroundsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17E1E7120B0E22700182F3F /* BackgroundsUIView.swift */; };
 		C180EBEC20D0D0210054FA94 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C180EBEB20D0D0210054FA94 /* MainTableViewController.swift */; };
 		C197E66020A50BB1009C9EB4 /* WYRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E65F20A50BB1009C9EB4 /* WYRViewController.swift */; };
 		C197E66220A5156F009C9EB4 /* TruthsAndLiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C197E66120A5156F009C9EB4 /* TruthsAndLiesViewController.swift */; };
@@ -28,7 +27,6 @@
 		C14C201420A2809C008CE960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C14C201720A2809C008CE960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C14C201920A2809C008CE960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C17E1E7120B0E22700182F3F /* BackgroundsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundsUIView.swift; sourceTree = "<group>"; };
 		C180EBEB20D0D0210054FA94 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		C197E65F20A50BB1009C9EB4 /* WYRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WYRViewController.swift; sourceTree = "<group>"; };
 		C197E66120A5156F009C9EB4 /* TruthsAndLiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthsAndLiesViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			children = (
 				C1C5004120FF899C00B99F47 /* Game Controllers */,
 				C14C200D20A2809B008CE960 /* AppDelegate.swift */,
-				C17E1E7120B0E22700182F3F /* BackgroundsUIView.swift */,
 				C180EBEB20D0D0210054FA94 /* MainTableViewController.swift */,
 				C14C201120A2809B008CE960 /* Main.storyboard */,
 				C14C201620A2809C008CE960 /* LaunchScreen.storyboard */,
@@ -161,7 +158,6 @@
 				C11F4A7320A3747E00103607 /* ABCViewController.swift in Sources */,
 				C11F4A7120A3675C00103607 /* GhostViewController.swift in Sources */,
 				C197E66220A5156F009C9EB4 /* TruthsAndLiesViewController.swift in Sources */,
-				C17E1E7220B0E22700182F3F /* BackgroundsUIView.swift in Sources */,
 				C180EBEC20D0D0210054FA94 /* MainTableViewController.swift in Sources */,
 				C14C200E20A2809B008CE960 /* AppDelegate.swift in Sources */,
 				C197E66020A50BB1009C9EB4 /* WYRViewController.swift in Sources */,
