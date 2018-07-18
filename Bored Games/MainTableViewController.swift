@@ -20,11 +20,36 @@ class MainTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        
+        let containerView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        containerView.backgroundColor = UIColor.orange
+        
+        // nav bar comes down to y: 20
+        let yValue: CGFloat = 130.0
+        let imageView = UIImageView(frame: CGRect(x: UIScreen.main.bounds.width, y: yValue, width: 50.0, height: 60.0))
+        imageView.image = UIImage(named: "cloud1")
+        containerView.addSubview(imageView)
+        tableView.backgroundView = containerView
+        
+       // let new:CGPoint = containerView.point(inside: CGPoint(x: 0.0, y: yValue), with: nil)
+        UIView.animate(withDuration: 3, animations: {() -> Void in
+            imageView.center = CGPoint(x: -5.0, y: yValue)
+        })
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor.clear
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -75,12 +100,7 @@ class MainTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "toGhost" {
-            let view = BackgroundsUIView()
-            view.setColor(color: UIColor.blue)
-        }
+
     }
 
 
