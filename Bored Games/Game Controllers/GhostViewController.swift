@@ -20,19 +20,6 @@ class GhostViewController: UIViewController {
     }
     @IBOutlet weak var txtLetter: UILabel!
     
-    override func viewDidAppear(_ animated: Bool) {
-         /*let view = BackgroundsUIView()
-        view.setColor(color: UIColor.blue)
-       super.viewDidAppear(animated)
-        let width = UIScreen.main.bounds.size.width
-        let height = 243
-        
-        let rectangle: CGRect = CGRect(x: 0, y: 0, width: Int(width), height: height)
-
-        view.draw(rectangle)
-        */
-        
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

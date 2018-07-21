@@ -12,7 +12,7 @@ class WYRViewController: UIViewController {
 
     let wouldYouKids = ["Eat ice cream for everyday for the rest of your life OR go to Disney World whenever you want","Be in school 24/7 OR do chores for the rest of your life", "Do the dishes OR do the laundry", ""]
     let wouldYouTeens = ["Kiss Zac Efron OR kiss Troy Bolton","Vacation on a beach or in the city?"]
-    let wouldYouAdults = [""]
+    let wouldYouAdults = ["Diarrhea for life or constipated for life?"]
     
     var wouldYouList: [String]?
     var group: Int?
