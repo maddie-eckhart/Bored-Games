@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  GameCollectionViewCell.swift
 //  Bored Games
 //
 //  Created by Madeline Eckhart on 8/10/18.
@@ -8,6 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class GameCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var nameLabel: UILabel!
 }

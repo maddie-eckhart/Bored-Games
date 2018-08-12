@@ -12,6 +12,8 @@ private let reuseIdentifier = "game"
 
 class CollectionViewController: UICollectionViewController {
 
+    let gameList = ["Would You Rather", "2 Truths and a Lie", "Something", "Something Else", "3 Ghosts", "Alphabet Game"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,11 +55,15 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        cell.backgroundColor = UIColor.red
-    
-        return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! GameCollectionViewCell
+        cell.nameLabel.text = gameList[indexPath.row]
+        
+        if (indexPath.row % 2 == 0) {
+            cell.backgroundColor = UIColor.red
+        }else{
+            cell.backgroundColor = UIColor.cyan
+        }
+        return cell as UICollectionViewCell
     }
 
     // MARK: UICollectionViewDelegate
